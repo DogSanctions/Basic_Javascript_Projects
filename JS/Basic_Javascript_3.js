@@ -50,3 +50,14 @@ function circumference_PI() {
   var simple_Math = 2.5;
   document.getElementById("Math_8").innerHTML = Math.PI;
 }
+
+function my_Dictionary() {
+  var Animal = {
+    Species:"Dog",
+    Color:"Brown",
+    Breed:"Australian Shepherd",
+    Age:1,
+    Sound:"Bark!"
+  };
+  document.getElementById("Dictionary").innerHTML = Animal.Sound;
+}
