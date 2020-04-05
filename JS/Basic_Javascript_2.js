@@ -1,7 +1,7 @@
 function Sour_Sweet_Gone_Function() {
     var str = "this text is red";
     var result = str.fontcolor("red");
-    document.getElementById("Red_Text").innherHTML = result;
+    document.getElementById("Red_Text").innerHTML = result;
     document.write("Cherry, and strawberry in particular");
     
 }
