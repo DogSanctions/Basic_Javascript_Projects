@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title></title>
+    </head>
+<body>
+    <script src="./JS/Basic_Javascript_10.js"></script>
+    <p id="Counting_to_Ten"></p>
+    <button onclick="Counting_to_Ten()">Click here to start.</button>
+    <br>
+    <p id="string"></p>
+    <button onclick="string_Function()">Click to see string</button>
+    <br>
+    <p id="List_of_Animals"></p>
+    <button onclick="for_Loop()">Click here.</button>
+    <br>
+    <p id="sticker"></p>
+    <button onclick="sticker_pics()">Click here</button>
+    <br>
+    <p id="Constant"></p>
+    <button onclick="constant_function()">Click here!</button>
+    <br>
+    <p id="return"></p>
+    <script>
+        function return_Function() {
+         return Math.PI;
+        document.getElementById("return").innerHTML = return_Function();
+}
+    </script>
+    <button onclick="return_Function()">Says this isnt defined but it def is</button>
+    <br>
+    <p id="Car_Object">I cannot get this to work either</p>
+    <script>
+    let car = {
+        make: "BMW ",
+        model: "M3 ",
+        year: "2021 ",
+        color: "black ",
+        description : function() {
+            return "The car is a " + this.year + this.color + this.make + this.model;    
+        }
+    };
+    document.getElementById("Car_Object").innerHTML = car.description()
+    </script>
+    <br>
+    <p id="continue"></p>
+    <script>
+        var text = "";
+        var i;
+        for (i = 0; i < 10; i++) {
+          if (i === 3) { continue; }
+          text += "The number is " + i + "<br>";
+        }
+ document.getElementById("continue").innerHTML = text;
+</script>
+    <br>
+    <p id="break"></p>
+<script>   
+    var text = "";
+    var i;
+    for (i = 0; i < 10; i++) {
+        if (i === 3) { break; }
+        text += "The number is " + i + "<br>";
+    }
+document.getElementById("break").innerHTML = text;
+</script>
+</body>
+</html>
