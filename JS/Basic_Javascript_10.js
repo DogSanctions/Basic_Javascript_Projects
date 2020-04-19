@@ -24,7 +24,7 @@ function for_Loop() {
     document.getElementById("List_of_Animals").innerHTML = Content;
 }
 
-function sticker_pics() {
+function sticker_pics() { //This is where I would add pcitures of my dog that depict these emotions
     var sticker_picture = [];
     sticker_picture[0] = "dead";
     sticker_picture[1] = "rage";
