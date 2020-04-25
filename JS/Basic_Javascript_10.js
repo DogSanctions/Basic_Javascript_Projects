@@ -34,7 +34,7 @@ function sticker_pics() { //This is where I would add pcitures of my dog that de
     document.getElementById("sticker").innerHTML = "In this sticker, peanut is " + sticker_picture[2] + " . ";
 }
 
-function constant_function () {
+function constant_function() {
     const Musical_Instrument = {type:"guitar", brand:"Fender", color:"black"};
     Musical_Instrument.color = "blue";
     Musical_Instrument.price = "$900";

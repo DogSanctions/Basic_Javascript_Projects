@@ -21,16 +21,17 @@
     <button onclick="constant_function()">Click here!</button>
     <br>
     <p id="return"></p>
+    <button onclick="return_Function()">Click for a slice of..</button>
     <script>
         function return_Function() {
-         return Math.PI;
-        document.getElementById("return").innerHTML = return_Function();
+        document.getElementById("return").innerHTML = Math.PI;
 }
     </script>
-    <button onclick="return_Function()">Says this isnt defined but it def is</button>
     <br>
-    <p id="Car_Object">I cannot get this to work either</p>
+    <p id="Car_Object"></p>
+    <button onclick="let_function()">Car</button>
     <script>
+    function let_function() {
     let car = {
         make: "BMW ",
         model: "M3 ",
@@ -41,6 +42,7 @@
         }
     };
     document.getElementById("Car_Object").innerHTML = car.description()
+}
     </script>
     <br>
     <p id="continue"></p>
